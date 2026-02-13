@@ -8,4 +8,11 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface LogsExecutionsTime {
+    String value() default "";
+
+    String description() default "";
+
+    String name() default "";
+
+    String level() default "INFO";
 }

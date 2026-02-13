@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutionException;
 @Service
 public class MyService {
 
-    @LogsExecutionsTime
+    @LogsExecutionsTime(value = "fetching serve method", level="INFO")
     public void serve() throws InterruptedException, ExecutionException {
 
     }
